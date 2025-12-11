@@ -1,0 +1,48 @@
+[gd_scene load_steps=9 format=3 uid="uid://bvebeshdiil74"]
+
+[ext_resource type="Script" path="res://Main Menu/title/set_title.gd" id="1_smckf"]
+[ext_resource type="Texture2D" uid="uid://b8pno33qs3jnq" path="res://spr/color/black.png" id="1_wi5e5"]
+[ext_resource type="FontFile" uid="uid://dt27xpbooyssq" path="res://UI&Menues/font/source/font_ttf.ttf" id="2_8wr3v"]
+[ext_resource type="Texture2D" uid="uid://bmx8vy8p4pulc" path="res://spr/title/new_title.png" id="2_e14mg"]
+[ext_resource type="SpriteFrames" uid="uid://sdgu6j6cba15" path="res://spr/menu/ani_new_cursor.tres" id="4_mprvf"]
+[ext_resource type="Script" path="res://Main Menu/title/obj_opts_cursor.gd" id="5_joel8"]
+[ext_resource type="SpriteFrames" uid="uid://dfk7s2rqbv4ci" path="res://spr/btl/actor/ani_char_btl.tres" id="7_csscu"]
+[ext_resource type="Script" path="res://Main Menu/title/obj_title_actor.gd" id="8_mf1pu"]
+
+[node name="set_title" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_smckf")
+
+[node name="obj_bck" type="Sprite2D" parent="."]
+scale = Vector2(32, 28)
+texture = ExtResource("1_wi5e5")
+centered = false
+
+[node name="obj_title" type="Sprite2D" parent="."]
+texture = ExtResource("2_e14mg")
+centered = false
+
+[node name="obj_opts" type="Label" parent="."]
+visible = false
+offset_left = 88.0
+offset_top = 96.0
+offset_right = 186.0
+offset_bottom = 137.0
+theme_override_fonts/font = ExtResource("2_8wr3v")
+theme_override_font_sizes/font_size = 8
+text = "Test Battle
+View Fighters
+New Campaign
+Load Campaign
+"
+
+[node name="obj_opts_cursor" type="AnimatedSprite2D" parent="."]
+position = Vector2(80, 112)
+sprite_frames = ExtResource("4_mprvf")
+centered = false
+script = ExtResource("5_joel8")
+
+[node name="obj_actor" type="AnimatedSprite2D" parent="."]
+position = Vector2(68, 189)
+sprite_frames = ExtResource("7_csscu")
+script = ExtResource("8_mf1pu")

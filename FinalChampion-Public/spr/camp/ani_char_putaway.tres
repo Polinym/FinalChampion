@@ -1,0 +1,53 @@
+[gd_resource type="SpriteFrames" load_steps=8 format=3 uid="uid://cm7h4s0tke22t"]
+
+[ext_resource type="Texture2D" uid="uid://0pbngkqve7rt" path="res://spr/camp/char_putaway.png" id="1_iecbh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g3ynt"]
+atlas = ExtResource("1_iecbh")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0d5f7"]
+atlas = ExtResource("1_iecbh")
+region = Rect2(16, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xqkrc"]
+atlas = ExtResource("1_iecbh")
+region = Rect2(32, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b7shw"]
+atlas = ExtResource("1_iecbh")
+region = Rect2(48, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ej7uu"]
+atlas = ExtResource("1_iecbh")
+region = Rect2(64, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d6txu"]
+atlas = ExtResource("1_iecbh")
+region = Rect2(80, 0, 16, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g3ynt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0d5f7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xqkrc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b7shw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ej7uu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d6txu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

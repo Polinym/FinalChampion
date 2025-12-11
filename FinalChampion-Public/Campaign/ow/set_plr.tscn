@@ -1,0 +1,59 @@
+[gd_scene load_steps=8 format=3 uid="uid://dvkfi2o1hc45f"]
+
+[ext_resource type="SpriteFrames" uid="uid://w38t3ygqq4c2" path="res://spr/camp/ani_char.tres" id="1_pcwk4"]
+[ext_resource type="Script" path="res://Campaign/ow/set_plr.gd" id="2_5qtn5"]
+[ext_resource type="Texture2D" uid="uid://bybit0ygcwm44" path="res://spr/ow/shadow.png" id="2_h1l1t"]
+[ext_resource type="SpriteFrames" uid="uid://bxl8435d1qly1" path="res://spr/camp/ani_blink.tres" id="3_yrudv"]
+[ext_resource type="SpriteFrames" uid="uid://bqwhuj0p506xp" path="res://spr/camp/ani_char_reflect.tres" id="5_4qirj"]
+[ext_resource type="Texture2D" uid="uid://b8pno33qs3jnq" path="res://spr/color/black.png" id="6_mwh2n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6gjyj"]
+size = Vector2(16, 8)
+
+[node name="set_plr" type="CharacterBody2D"]
+z_index = 1
+texture_filter = 1
+collision_layer = 2
+script = ExtResource("2_5qtn5")
+
+[node name="obj_shadow" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(8, 32)
+texture = ExtResource("2_h1l1t")
+centered = false
+
+[node name="obj_sprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(8, 8)
+sprite_frames = ExtResource("1_pcwk4")
+centered = false
+
+[node name="obj_blink" type="AnimatedSprite2D" parent="obj_sprite"]
+visible = false
+texture_filter = 1
+sprite_frames = ExtResource("3_yrudv")
+centered = false
+
+[node name="obj_col" type="CollisionShape2D" parent="."]
+texture_filter = 1
+position = Vector2(16, 36)
+shape = SubResource("RectangleShape2D_6gjyj")
+
+[node name="obj_sprite_reflect" type="AnimatedSprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(8, 35)
+sprite_frames = ExtResource("5_4qirj")
+centered = false
+
+[node name="obj_camera" type="Camera2D" parent="."]
+offset = Vector2(8, 8)
+limit_left = 0
+limit_top = 0
+limit_right = 512
+limit_bottom = 224
+
+[node name="obj_screen" type="Sprite2D" parent="obj_camera"]
+modulate = Color(1, 1, 1, 0)
+z_index = 9
+scale = Vector2(60, 60)
+texture = ExtResource("6_mwh2n")

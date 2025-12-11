@@ -1,0 +1,25 @@
+[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://bracjxs22017l"]
+
+[ext_resource type="Texture2D" uid="uid://h1r4nl2ijhlt" path="res://UI&Menues/font/source/bar_hp.png" id="1_8vp8g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_co4ta"]
+atlas = ExtResource("1_8vp8g")
+region = Rect2(0, 16, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4p204"]
+atlas = ExtResource("1_8vp8g")
+region = Rect2(8, 16, 8, 8)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_co4ta")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4p204")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

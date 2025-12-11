@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://cqa58xf75qlxx"]
+
+[ext_resource type="Texture2D" uid="uid://dgxctvtwo8nld" path="res://spr/camp/workout.png" id="1_g0s77"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w2k8d"]
+atlas = ExtResource("1_g0s77")
+region = Rect2(0, 0, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ol32n"]
+atlas = ExtResource("1_g0s77")
+region = Rect2(24, 0, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8vcwv"]
+atlas = ExtResource("1_g0s77")
+region = Rect2(48, 0, 24, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c1q12"]
+atlas = ExtResource("1_g0s77")
+region = Rect2(72, 0, 24, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w2k8d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ol32n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8vcwv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c1q12")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

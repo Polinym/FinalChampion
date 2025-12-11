@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cf8egvyvj0v2l"]
+
+[ext_resource type="Script" path="res://Campaign/status/set_status.gd" id="1_3npbl"]
+[ext_resource type="Texture2D" uid="uid://sfm131jwrqcy" path="res://spr/menu/box/bar_status.png" id="1_etu2b"]
+
+[node name="set_status" type="Node2D"]
+z_index = 12
+script = ExtResource("1_3npbl")
+
+[node name="obj_box" type="Sprite2D" parent="."]
+texture = ExtResource("1_etu2b")
+centered = false

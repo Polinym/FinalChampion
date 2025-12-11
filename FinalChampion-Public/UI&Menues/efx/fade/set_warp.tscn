@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://5r5m6ed2uf5h"]
+
+[ext_resource type="Texture2D" uid="uid://b8pno33qs3jnq" path="res://spr/color/black.png" id="1_b8djm"]
+[ext_resource type="Script" path="res://UI&Menues/efx/fade/obj_warp.gd" id="2_ux4qe"]
+
+[node name="set_warp" type="Node2D"]
+
+[node name="obj_layer" type="CanvasLayer" parent="."]
+layer = 128
+
+[node name="obj_warp" type="Sprite2D" parent="obj_layer"]
+texture_filter = 1
+scale = Vector2(32, 28)
+texture = ExtResource("1_b8djm")
+centered = false
+script = ExtResource("2_ux4qe")

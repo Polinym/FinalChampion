@@ -1,0 +1,25 @@
+[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://cwllckkboh3hy"]
+
+[ext_resource type="Texture2D" uid="uid://bmecjqv2hcwnw" path="res://spr/ow/npc/npc_aeris.png" id="1_e8ndm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i2mfy"]
+atlas = ExtResource("1_e8ndm")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rfr27"]
+atlas = ExtResource("1_e8ndm")
+region = Rect2(16, 0, 16, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i2mfy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rfr27")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

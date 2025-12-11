@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dl5em8xe17yxe"]
+
+[ext_resource type="Script" path="res://Bootup/scene_boot.gd" id="1_fw55b"]
+[ext_resource type="Texture2D" uid="uid://b74kt2tpa1qvj" path="res://Bootup/logo_1.png" id="1_xbwea"]
+[ext_resource type="Texture2D" uid="uid://b8pno33qs3jnq" path="res://spr/color/black.png" id="2_kep62"]
+
+[node name="scene_boot" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_fw55b")
+
+[node name="obj_logo" type="Sprite2D" parent="."]
+position = Vector2(128, 112)
+texture = ExtResource("1_xbwea")
+
+[node name="obj_cover" type="Sprite2D" parent="."]
+scale = Vector2(32, 28)
+texture = ExtResource("2_kep62")
+centered = false

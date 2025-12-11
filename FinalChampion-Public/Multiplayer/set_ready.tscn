@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://c771hw3adjoq3"]
+
+[ext_resource type="Texture2D" uid="uid://dvd2mw146v88e" path="res://spr/btl/multi/ready/ready_bck.png" id="1_l40bq"]
+[ext_resource type="Script" path="res://Multiplayer/set_ready.gd" id="1_xf3hm"]
+[ext_resource type="Texture2D" uid="uid://ypx7po0bcjg4" path="res://spr/btl/multi/ready/ready_title.png" id="2_b3pls"]
+[ext_resource type="SpriteFrames" uid="uid://clttnbj21hear" path="res://spr/btl/multi/ready/ani_ready_prompt.tres" id="3_x55fp"]
+
+[node name="set_ready" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_xf3hm")
+
+[node name="obj_flare" type="Sprite2D" parent="."]
+position = Vector2(-256, 0)
+texture = ExtResource("1_l40bq")
+centered = false
+offset = Vector2(-768, 0)
+
+[node name="obj_title" type="Sprite2D" parent="obj_flare"]
+texture = ExtResource("2_b3pls")
+centered = false
+
+[node name="obj_prompt" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(128, 120)
+sprite_frames = ExtResource("3_x55fp")
+centered = false

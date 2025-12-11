@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://b2hdelcjdbl1h"]
+
+[ext_resource type="Texture2D" uid="uid://bb2p1jwqhupvg" path="res://spr/menu/box/text.png" id="1_p4d0q"]
+[ext_resource type="Script" path="res://UI&Menues/text/obj_text.gd" id="3_0matu"]
+[ext_resource type="SpriteFrames" uid="uid://bpj102fiwlnvw" path="res://spr/port/char/ani_port_char.tres" id="4_620fl"]
+[ext_resource type="SpriteFrames" uid="uid://b6kd53qebyxw5" path="res://spr/menu/ani_shifter.tres" id="4_b5o6k"]
+[ext_resource type="SpriteFrames" uid="uid://dpsrcxh63oi8y" path="res://spr/port/char/ani_port_char_blink.tres" id="5_4lu8k"]
+[ext_resource type="Texture2D" uid="uid://ocdkcvrndhgx" path="res://spr/menu/box/name_box.png" id="6_fium5"]
+
+[node name="set_text" type="Node2D"]
+z_index = 20
+
+[node name="obj_text_box" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(16, 168)
+texture = ExtResource("1_p4d0q")
+centered = false
+
+[node name="obj_text" type="Node2D" parent="."]
+texture_filter = 1
+script = ExtResource("3_0matu")
+
+[node name="obj_text_shifter" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(224, 200)
+sprite_frames = ExtResource("4_b5o6k")
+
+[node name="obj_port" type="AnimatedSprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(152, 88)
+sprite_frames = ExtResource("4_620fl")
+centered = false
+
+[node name="obj_blink" type="AnimatedSprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(152, 88)
+sprite_frames = ExtResource("5_4lu8k")
+centered = false
+
+[node name="obj_name_box" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(16, 152)
+texture = ExtResource("6_fium5")
+centered = false

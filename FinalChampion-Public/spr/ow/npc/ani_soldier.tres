@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://b5nc3iqndieel"]
+
+[ext_resource type="Texture2D" uid="uid://c6kuy5l3eww47" path="res://spr/ow/npc/npc_soldier.png" id="1_vlwe6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i2r5v"]
+atlas = ExtResource("1_vlwe6")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tj0l7"]
+atlas = ExtResource("1_vlwe6")
+region = Rect2(0, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vm7sn"]
+atlas = ExtResource("1_vlwe6")
+region = Rect2(0, 64, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5jxiy"]
+atlas = ExtResource("1_vlwe6")
+region = Rect2(0, 96, 16, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i2r5v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tj0l7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vm7sn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5jxiy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

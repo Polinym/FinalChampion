@@ -1,0 +1,32 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://dpew0hdwej5gj"]
+
+[ext_resource type="Texture2D" uid="uid://cl30huxtqohk1" path="res://spr/port/char/port.png" id="1_mm5n2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_35kf7"]
+atlas = ExtResource("1_mm5n2")
+region = Rect2(0, 240, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_grrtv"]
+atlas = ExtResource("1_mm5n2")
+region = Rect2(80, 240, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3lats"]
+atlas = ExtResource("1_mm5n2")
+region = Rect2(160, 240, 80, 80)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_35kf7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_grrtv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3lats")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

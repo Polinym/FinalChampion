@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxgmh2vne2qbh"]
+
+[ext_resource type="Script" path="res://Characters/data/set_dummy.gd" id="1_ippp4"]
+
+[node name="set_dummy" type="Node2D"]
+script = ExtResource("1_ippp4")

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://clxjb43w60x2i"]
+
+[ext_resource type="Texture2D" uid="uid://cd1jucubb0dc" path="res://spr/efx/rain.png" id="1_wlevv"]
+
+[node name="set_raindrop" type="Sprite2D"]
+texture = ExtResource("1_wlevv")
+centered = false

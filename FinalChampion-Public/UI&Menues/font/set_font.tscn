@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://qrcoqfpobobj"]
+
+[ext_resource type="Script" path="res://UI&Menues/font/set_font.gd" id="1_o7d5x"]
+
+[node name="set_font" type="AnimatedSprite2D"]
+texture_filter = 1
+centered = false
+script = ExtResource("1_o7d5x")

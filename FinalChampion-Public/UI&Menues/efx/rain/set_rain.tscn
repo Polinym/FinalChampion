@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6ter33ia1adb"]
+
+[ext_resource type="Script" path="res://UI&Menues/efx/rain/set_rain.gd" id="1_gfslo"]
+
+[node name="set_rain" type="Node2D"]
+script = ExtResource("1_gfslo")

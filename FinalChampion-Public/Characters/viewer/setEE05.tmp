@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://c1or3pl3qbyug"]
+
+[ext_resource type="Script" path="res://sets/menu/viewer/set_viewer.gd" id="1_8null"]
+[ext_resource type="Texture2D" uid="uid://d4m71jiav57nt" path="res://spr/menu/box/list.png" id="1_v0avy"]
+[ext_resource type="SpriteFrames" uid="uid://sdgu6j6cba15" path="res://spr/menu/ani_new_cursor.tres" id="3_w1cdd"]
+[ext_resource type="Texture2D" uid="uid://b2tud6kv4mbq4" path="res://spr/chars/example/port_mars.png" id="4_yk8ux"]
+
+[node name="set_viewer" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_8null")
+
+[node name="obj_list_box" type="Sprite2D" parent="."]
+texture = ExtResource("1_v0avy")
+centered = false
+
+[node name="obj_list_cursor" type="AnimatedSprite2D" parent="."]
+position = Vector2(16, 24)
+sprite_frames = ExtResource("3_w1cdd")
+centered = false
+
+[node name="obj_port" type="Sprite2D" parent="."]
+position = Vector2(192, 16)
+texture = ExtResource("4_yk8ux")
+centered = false

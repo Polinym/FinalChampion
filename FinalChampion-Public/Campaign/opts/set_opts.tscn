@@ -1,0 +1,54 @@
+[gd_scene load_steps=9 format=3 uid="uid://2sit8sxwvwy4"]
+
+[ext_resource type="Script" path="res://Campaign/opts/set_opts.gd" id="1_laycw"]
+[ext_resource type="Texture2D" uid="uid://b6btiexhpk4ds" path="res://spr/menu/opts/bar_opts.png" id="1_m5d66"]
+[ext_resource type="SpriteFrames" uid="uid://d0bxgb2pfkxra" path="res://spr/menu/opts/ani_opts_gym.tres" id="2_vk6pn"]
+[ext_resource type="SpriteFrames" uid="uid://it74recvln1g" path="res://spr/menu/opts/ani_opts_spar.tres" id="3_yqp74"]
+[ext_resource type="SpriteFrames" uid="uid://dkoxak076vi1l" path="res://spr/menu/opts/ani_opts_coach.tres" id="4_84cyo"]
+[ext_resource type="SpriteFrames" uid="uid://cyqut5i4bwx77" path="res://spr/menu/opts/ani_opts_info.tres" id="6_nh5jk"]
+[ext_resource type="SpriteFrames" uid="uid://lgygjjkiwhlc" path="res://spr/menu/opts/ani_opts_stuff.tres" id="7_6t2an"]
+[ext_resource type="SpriteFrames" uid="uid://qegq0j4ec2f1" path="res://spr/menu/opts/ani_opts_quit.tres" id="8_xjtom"]
+
+[node name="set_opts" type="Node2D"]
+z_index = 12
+texture_filter = 1
+position = Vector2(0, 256)
+script = ExtResource("1_laycw")
+
+[node name="obj_box" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(128, -32)
+texture = ExtResource("1_m5d66")
+centered = false
+
+[node name="obj_btn_info" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -32)
+sprite_frames = ExtResource("6_nh5jk")
+centered = false
+
+[node name="obj_btn_gym" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(8, 0)
+sprite_frames = ExtResource("2_vk6pn")
+centered = false
+
+[node name="obj_btn_stuff" type="AnimatedSprite2D" parent="."]
+position = Vector2(40, -32)
+sprite_frames = ExtResource("7_6t2an")
+centered = false
+
+[node name="obj_btn_spar" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(48, 0)
+sprite_frames = ExtResource("3_yqp74")
+centered = false
+
+[node name="obj_btn_quit" type="AnimatedSprite2D" parent="."]
+position = Vector2(80, -32)
+sprite_frames = ExtResource("8_xjtom")
+centered = false
+
+[node name="obj_btn_coach" type="AnimatedSprite2D" parent="."]
+position = Vector2(88, 0)
+sprite_frames = ExtResource("4_84cyo")
+centered = false

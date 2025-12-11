@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbe76ucjgkfp3"]
+
+[ext_resource type="Texture2D" uid="uid://dvus83lwopc26" path="res://spr/ow/warp.png" id="1_lv624"]
+[ext_resource type="Script" path="res://Campaign/ow/set_gate.gd" id="1_vf48d"]
+
+[node name="set_gate" type="Node2D"]
+script = ExtResource("1_vf48d")
+
+[node name="obj_display" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_lv624")
+centered = false

@@ -1,0 +1,32 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://bqdgw45fuvwm2"]
+
+[ext_resource type="Texture2D" uid="uid://dujrf6h1mi2u1" path="res://spr/port/zakton/port_zakton.png" id="1_70acx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4obuy"]
+atlas = ExtResource("1_70acx")
+region = Rect2(0, 120, 120, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0dx1a"]
+atlas = ExtResource("1_70acx")
+region = Rect2(120, 120, 120, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sxk6q"]
+atlas = ExtResource("1_70acx")
+region = Rect2(240, 120, 120, 120)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4obuy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0dx1a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sxk6q")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

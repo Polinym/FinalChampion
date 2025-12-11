@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://c204v847h6cpl"]
+
+[ext_resource type="Script" path="res://Battle/countdown/set_btl_cd.gd" id="1_0wc8x"]
+[ext_resource type="Texture2D" uid="uid://cgobll400jt6w" path="res://spr/btl/countdown/btl_1.png" id="1_jj2r1"]
+[ext_resource type="Texture2D" uid="uid://xj4aacad83lf" path="res://spr/btl/countdown/btl_2.png" id="2_lllqo"]
+[ext_resource type="Texture2D" uid="uid://bdqh57actmy4f" path="res://spr/btl/countdown/btl_3.png" id="3_1q280"]
+[ext_resource type="Texture2D" uid="uid://caltx1dig6ckb" path="res://spr/btl/countdown/btl_fight.png" id="4_ondpd"]
+[ext_resource type="Texture2D" uid="uid://cv11sr1t7al1d" path="res://spr/btl/btl_focus_bar.png" id="6_276m0"]
+
+[node name="set_btl_cd" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_0wc8x")
+
+[node name="obj_n1" type="Sprite2D" parent="."]
+position = Vector2(-96, 64)
+texture = ExtResource("1_jj2r1")
+centered = false
+
+[node name="obj_n2" type="Sprite2D" parent="."]
+position = Vector2(-96, 64)
+texture = ExtResource("2_lllqo")
+centered = false
+
+[node name="obj_n3" type="Sprite2D" parent="."]
+position = Vector2(-96, 64)
+texture = ExtResource("3_1q280")
+centered = false
+
+[node name="obj_pos" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(81, 64)
+texture = ExtResource("3_1q280")
+centered = false
+
+[node name="obj_fight" type="Sprite2D" parent="."]
+position = Vector2(-159, 64)
+texture = ExtResource("4_ondpd")
+centered = false
+
+[node name="bar_top" type="Sprite2D" parent="."]
+scale = Vector2(1, 1.25)
+texture = ExtResource("6_276m0")
+centered = false
+
+[node name="bar_bottom" type="Sprite2D" parent="."]
+position = Vector2(0, 160)
+texture = ExtResource("6_276m0")
+centered = false

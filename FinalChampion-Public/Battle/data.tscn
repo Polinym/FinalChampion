@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://dv2engy42o8i1"]
+
+[ext_resource type="Script" path="res://Characters/obj_player.gd" id="1_ar5gu"]
+[ext_resource type="Script" path="res://Battle/obj_moves.gd" id="2_857yh"]
+[ext_resource type="Script" path="res://Battle/obj_skills.gd" id="3_d3xf2"]
+[ext_resource type="Script" path="res://Battle/btl_ai.gd" id="4_majt3"]
+
+[sub_resource type="GDScript" id="GDScript_vhocm"]
+script/source = "\"\"\"
+Scene to hold player information
+Accessed by battle and the character menu.
+\"\"\"
+extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[node name="data" type="Node2D"]
+script = SubResource("GDScript_vhocm")
+
+[node name="obj_player" type="Node2D" parent="."]
+script = ExtResource("1_ar5gu")
+
+[node name="obj_player2" type="Node2D" parent="."]
+script = ExtResource("1_ar5gu")
+
+[node name="obj_moves" type="Node2D" parent="."]
+script = ExtResource("2_857yh")
+
+[node name="obj_skills" type="Node2D" parent="."]
+script = ExtResource("3_d3xf2")
+
+[node name="btl_ai" type="Node2D" parent="."]
+script = ExtResource("4_majt3")

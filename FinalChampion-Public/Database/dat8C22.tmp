@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://b624a7ioxtows"]
+
+[ext_resource type="Script" path="res://Database/database.gd" id="1_k6e6r"]
+
+[node name="DB" type="Node"]
+script = ExtResource("1_k6e6r")
+
+[node name="open" type="Node" parent="."]
+
+[node name="query" type="Node" parent="."]
+
+[node name="controller" type="Node" parent="."]

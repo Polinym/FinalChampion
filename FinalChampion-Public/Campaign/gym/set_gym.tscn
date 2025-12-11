@@ -1,0 +1,76 @@
+[gd_scene load_steps=10 format=3 uid="uid://dhorxkuc8mf32"]
+
+[ext_resource type="Script" path="res://Campaign/gym/set_gym.gd" id="1_b1nox"]
+[ext_resource type="Texture2D" uid="uid://b8pno33qs3jnq" path="res://spr/color/black.png" id="1_rykbi"]
+[ext_resource type="SpriteFrames" uid="uid://w38t3ygqq4c2" path="res://spr/camp/ani_char.tres" id="2_k0jye"]
+[ext_resource type="SpriteFrames" uid="uid://bm80o6hy1g2im" path="res://spr/menu/ani_opt.tres" id="3_m8pbj"]
+[ext_resource type="Texture2D" uid="uid://docicu20vs77s" path="res://spr/menu/box/box_title.png" id="3_ty6fw"]
+[ext_resource type="Texture2D" uid="uid://cjnacc0e1h50p" path="res://spr/camp/spotlight.png" id="5_3fhd4"]
+[ext_resource type="SpriteFrames" uid="uid://bxl8435d1qly1" path="res://spr/camp/ani_blink.tres" id="5_h1m7g"]
+[ext_resource type="SpriteFrames" uid="uid://lp8agifs5t4p" path="res://spr/camp/ani_treadmill.tres" id="8_xajt8"]
+[ext_resource type="SpriteFrames" uid="uid://t6xtw5fb3pt4" path="res://spr/camp/ani_char_run_blink.tres" id="9_1eueb"]
+
+[node name="set_gym" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_b1nox")
+
+[node name="obj_bck" type="Sprite2D" parent="."]
+scale = Vector2(32, 28)
+texture = ExtResource("1_rykbi")
+centered = false
+
+[node name="obj_box_title" type="Sprite2D" parent="."]
+position = Vector2(48, 0)
+texture = ExtResource("3_ty6fw")
+centered = false
+offset = Vector2(0, 4)
+
+[node name="obj_opt_strength" type="AnimatedSprite2D" parent="."]
+position = Vector2(8, 40)
+sprite_frames = ExtResource("3_m8pbj")
+centered = false
+
+[node name="obj_opt_agility" type="AnimatedSprite2D" parent="."]
+position = Vector2(8, 72)
+sprite_frames = ExtResource("3_m8pbj")
+centered = false
+
+[node name="obj_opt_reflexes" type="AnimatedSprite2D" parent="."]
+position = Vector2(8, 104)
+sprite_frames = ExtResource("3_m8pbj")
+centered = false
+
+[node name="obj_opt_leave" type="AnimatedSprite2D" parent="."]
+position = Vector2(8, 136)
+sprite_frames = ExtResource("3_m8pbj")
+centered = false
+
+[node name="obj_spotlight" type="Sprite2D" parent="."]
+position = Vector2(144, 56)
+texture = ExtResource("5_3fhd4")
+centered = false
+
+[node name="obj_actor" type="AnimatedSprite2D" parent="."]
+z_index = 1
+position = Vector2(184, 108)
+sprite_frames = ExtResource("2_k0jye")
+centered = false
+
+[node name="obj_blink" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(184, 72)
+sprite_frames = ExtResource("5_h1m7g")
+centered = false
+
+[node name="obj_treadmill" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(168, 104)
+sprite_frames = ExtResource("8_xajt8")
+centered = false
+offset = Vector2(4, 0)
+
+[node name="obj_blink_run" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(184, 104)
+sprite_frames = ExtResource("9_1eueb")
+centered = false

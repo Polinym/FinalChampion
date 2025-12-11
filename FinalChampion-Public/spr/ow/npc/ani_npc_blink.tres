@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://bisiximf4kkfp"]
+
+[ext_resource type="Texture2D" uid="uid://c4uc24m0ve2e2" path="res://spr/ow/npc/npc_blink.png" id="1_ayaw1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wgq6n"]
+atlas = ExtResource("1_ayaw1")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uqh36"]
+atlas = ExtResource("1_ayaw1")
+region = Rect2(0, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1chqb"]
+atlas = ExtResource("1_ayaw1")
+region = Rect2(0, 64, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kr5p1"]
+atlas = ExtResource("1_ayaw1")
+region = Rect2(0, 96, 16, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wgq6n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uqh36")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1chqb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kr5p1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

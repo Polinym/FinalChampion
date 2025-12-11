@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5ytbkbtoqbuw"]
+
+[ext_resource type="Script" path="res://Characters/ma/set_ma.gd" id="1_dd8l3"]
+[ext_resource type="Texture2D" uid="uid://cvofaykrdxpf" path="res://spr/menu/bck_ma.png" id="1_jf7w8"]
+[ext_resource type="SpriteFrames" uid="uid://sdgu6j6cba15" path="res://spr/menu/ani_new_cursor.tres" id="2_4ypdb"]
+
+[node name="obj_ma" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_dd8l3")
+
+[node name="obj_bck" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_jf7w8")
+centered = false
+
+[node name="obj_cursor" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(40, 80)
+sprite_frames = ExtResource("2_4ypdb")
+centered = false

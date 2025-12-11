@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7lacnig3jgjy"]
+
+[ext_resource type="Script" path="res://UI&Menues/set_phone.gd" id="1_0cpmt"]
+[ext_resource type="SpriteFrames" uid="uid://cwpcn8a57nbdj" path="res://spr/menu/ani_phone.tres" id="1_pdp0r"]
+
+[node name="set_phone" type="Node2D"]
+z_index = 14
+texture_filter = 1
+script = ExtResource("1_0cpmt")
+
+[node name="obj_sprite" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = ExtResource("1_pdp0r")
+centered = false

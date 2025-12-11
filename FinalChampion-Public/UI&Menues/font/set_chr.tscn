@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://fhm3cms085my"]
+
+[node name="set_obj" type="AnimatedSprite2D"]
+centered = false

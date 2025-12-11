@@ -1,0 +1,68 @@
+[gd_scene load_steps=10 format=3 uid="uid://crtq6oeudv74x"]
+
+[ext_resource type="Texture2D" uid="uid://g4emflx2vb82" path="res://spr/bck/arena_bck.png" id="1_hnjjl"]
+[ext_resource type="Script" path="res://Campaign/prefight/set_prefight.gd" id="1_ltsr1"]
+[ext_resource type="SpriteFrames" uid="uid://bm80o6hy1g2im" path="res://spr/menu/ani_opt.tres" id="2_mot43"]
+[ext_resource type="Texture2D" uid="uid://docicu20vs77s" path="res://spr/menu/box/box_title.png" id="2_w5rqj"]
+[ext_resource type="Texture2D" uid="uid://bijgcx3bociiw" path="res://spr/menu/box/bar_info.png" id="4_07tau"]
+[ext_resource type="Texture2D" uid="uid://b8pno33qs3jnq" path="res://spr/color/black.png" id="4_iibwq"]
+[ext_resource type="SpriteFrames" uid="uid://csub7x7kh2f2f" path="res://spr/port/zakton/ani_port_zakton.tres" id="6_7an6l"]
+[ext_resource type="SpriteFrames" uid="uid://cl60d6qt10c3j" path="res://spr/btl/actor/ani_enemy_btl.tres" id="7_xb4n4"]
+[ext_resource type="Texture2D" uid="uid://dvlvns03b5ra3" path="res://spr/ow/npc/npc_woman.png" id="9_ckene"]
+
+[node name="set_prefight" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_ltsr1")
+
+[node name="obj_bck" type="Sprite2D" parent="."]
+texture = ExtResource("1_hnjjl")
+centered = false
+
+[node name="obj_box_title" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(48, 16)
+texture = ExtResource("2_w5rqj")
+centered = false
+
+[node name="obj_opt_view" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(8, 152)
+sprite_frames = ExtResource("2_mot43")
+centered = false
+
+[node name="obj_opt_fight" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(24, 184)
+sprite_frames = ExtResource("2_mot43")
+centered = false
+
+[node name="obj_fade" type="Sprite2D" parent="."]
+visible = false
+z_index = 1
+position = Vector2(0, 64)
+scale = Vector2(32, 20)
+texture = ExtResource("4_iibwq")
+centered = false
+
+[node name="obj_box_enemy" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(280, 56)
+texture = ExtResource("4_07tau")
+centered = false
+
+[node name="obj_port" type="AnimatedSprite2D" parent="obj_box_enemy"]
+position = Vector2(48, 88)
+sprite_frames = ExtResource("6_7an6l")
+
+[node name="obj_btl_actor" type="AnimatedSprite2D" parent="obj_box_enemy"]
+position = Vector2(8, 8)
+sprite_frames = ExtResource("7_xb4n4")
+centered = false
+
+[node name="obj_pos" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(56, 24)
+texture = ExtResource("9_ckene")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 24)

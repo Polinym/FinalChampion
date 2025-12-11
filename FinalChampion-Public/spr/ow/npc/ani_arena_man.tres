@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://dqj72a5ksa0hh"]
+
+[ext_resource type="Texture2D" uid="uid://7wu6comyn4k7" path="res://spr/ow/npc/npc_arena_man.png" id="1_41tji"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_85utg"]
+atlas = ExtResource("1_41tji")
+region = Rect2(0, 0, 16, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_85utg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

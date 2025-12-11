@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://bsn0hye3jlgea"]
+
+[ext_resource type="Texture2D" uid="uid://bijgcx3bociiw" path="res://spr/menu/box/bar_info.png" id="1_e4g4x"]
+[ext_resource type="Script" path="res://Campaign/info/set_info.gd" id="1_gwghf"]
+[ext_resource type="SpriteFrames" uid="uid://w38t3ygqq4c2" path="res://spr/camp/ani_char.tres" id="2_etk6c"]
+[ext_resource type="SpriteFrames" uid="uid://bxl8435d1qly1" path="res://spr/camp/ani_blink.tres" id="3_u7i0t"]
+
+[node name="set_info" type="Node2D"]
+z_index = 15
+texture_filter = 1
+script = ExtResource("1_gwghf")
+
+[node name="obj_box" type="Sprite2D" parent="."]
+texture = ExtResource("1_e4g4x")
+centered = false
+
+[node name="obj_char" type="AnimatedSprite2D" parent="."]
+position = Vector2(16, 8)
+sprite_frames = ExtResource("2_etk6c")
+centered = false
+
+[node name="obj_blink" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(16, 8)
+sprite_frames = ExtResource("3_u7i0t")
+centered = false

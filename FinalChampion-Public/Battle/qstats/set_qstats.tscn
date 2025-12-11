@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://b41wu78qp36bp"]
+
+[ext_resource type="Script" path="res://Battle/qstats/set_qstats.gd" id="1_k1jn7"]
+[ext_resource type="Texture2D" uid="uid://jlhbxebbo655" path="res://spr/menu/box/quick_stats.png" id="1_muqu0"]
+
+[node name="set_qstats" type="Node2D"]
+script = ExtResource("1_k1jn7")
+
+[node name="obj_box" type="Sprite2D" parent="."]
+texture = ExtResource("1_muqu0")
+centered = false

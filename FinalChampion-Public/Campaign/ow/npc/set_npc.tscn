@@ -1,0 +1,50 @@
+[gd_scene load_steps=9 format=3 uid="uid://qlkd0y4vuwph"]
+
+[ext_resource type="Script" path="res://Campaign/ow/npc/set_npc.gd" id="1_pcgkp"]
+[ext_resource type="SpriteFrames" uid="uid://d4dnm5qc6o47s" path="res://spr/ow/npc/ani_man.tres" id="1_qg0o3"]
+[ext_resource type="Texture2D" uid="uid://bybit0ygcwm44" path="res://spr/ow/shadow.png" id="2_p3d7f"]
+[ext_resource type="SpriteFrames" uid="uid://cjrb0xnll5i3a" path="res://spr/ow/npc/ani_talk.tres" id="3_jartv"]
+[ext_resource type="SpriteFrames" uid="uid://7j5w8l57ufgy" path="res://spr/ow/npc/ani_reception_reflect.tres" id="5_bow6h"]
+[ext_resource type="SpriteFrames" uid="uid://c3sblqjobcvtg" path="res://spr/ow/npc/ani_zakton_reflect_blink.tres" id="6_atlgp"]
+[ext_resource type="SpriteFrames" uid="uid://bisiximf4kkfp" path="res://spr/ow/npc/ani_npc_blink.tres" id="6_o5x7c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_atlwr"]
+size = Vector2(16, 8)
+
+[node name="set_npc" type="CharacterBody2D"]
+texture_filter = 1
+script = ExtResource("1_pcgkp")
+
+[node name="obj_shadow" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, 24)
+texture = ExtResource("2_p3d7f")
+centered = false
+
+[node name="obj_sprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_qg0o3")
+centered = false
+
+[node name="obj_col" type="CollisionShape2D" parent="."]
+position = Vector2(8, 28)
+shape = SubResource("RectangleShape2D_atlwr")
+
+[node name="obj_talk" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(8, -16)
+sprite_frames = ExtResource("3_jartv")
+centered = false
+
+[node name="obj_reflect" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(8, 39)
+sprite_frames = ExtResource("5_bow6h")
+
+[node name="obj_blink" type="AnimatedSprite2D" parent="obj_reflect"]
+visible = false
+sprite_frames = ExtResource("6_atlgp")
+
+[node name="obj_blink" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(8, 16)
+sprite_frames = ExtResource("6_o5x7c")

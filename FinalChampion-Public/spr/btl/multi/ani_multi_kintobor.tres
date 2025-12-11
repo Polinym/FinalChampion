@@ -1,0 +1,25 @@
+[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://chhlx8obv1rey"]
+
+[ext_resource type="Texture2D" uid="uid://bjc4gci6jf5bs" path="res://spr/btl/multi/kintobor.png" id="1_qnh4g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3m016"]
+atlas = ExtResource("1_qnh4g")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rv37o"]
+atlas = ExtResource("1_qnh4g")
+region = Rect2(32, 0, 32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3m016")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rv37o")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

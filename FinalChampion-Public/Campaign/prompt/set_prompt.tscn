@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://ba7erk02dr85i"]
+
+[ext_resource type="Script" path="res://Campaign/prompt/set_prompt.gd" id="1_41rhn"]
+[ext_resource type="SpriteFrames" uid="uid://n1jn3utikuoa" path="res://spr/menu/ani_prompt.tres" id="1_hmy0g"]
+
+[node name="set_prompt" type="Node2D"]
+z_index = 17
+texture_filter = 1
+script = ExtResource("1_41rhn")
+
+[node name="obj_prompt_a" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_hmy0g")
+centered = false
+
+[node name="obj_prompt_b" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 32)
+sprite_frames = ExtResource("1_hmy0g")
+centered = false

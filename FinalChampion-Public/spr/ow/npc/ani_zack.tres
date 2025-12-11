@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://di2j22n7hv6h8"]
+
+[ext_resource type="Texture2D" uid="uid://ciiwdur7m5rnm" path="res://spr/ow/npc/zack.png" id="1_3c36a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wdlnh"]
+atlas = ExtResource("1_3c36a")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jmplu"]
+atlas = ExtResource("1_3c36a")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2pr4d"]
+atlas = ExtResource("1_3c36a")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17i22"]
+atlas = ExtResource("1_3c36a")
+region = Rect2(0, 64, 32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wdlnh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jmplu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2pr4d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_17i22")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

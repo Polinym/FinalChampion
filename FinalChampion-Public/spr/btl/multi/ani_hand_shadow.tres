@@ -1,0 +1,25 @@
+[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://bur4q1t2ococ0"]
+
+[ext_resource type="Texture2D" uid="uid://dcp8a2kfoywck" path="res://spr/btl/multi/hand_shadow.png" id="1_50baf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6wd3j"]
+atlas = ExtResource("1_50baf")
+region = Rect2(0, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ieet3"]
+atlas = ExtResource("1_50baf")
+region = Rect2(48, 0, 48, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6wd3j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ieet3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

@@ -1,0 +1,73 @@
+[gd_scene load_steps=6 format=3 uid="uid://b0orgv2oqcasp"]
+
+[ext_resource type="FontFile" uid="uid://futkrtedhiki" path="res://UI&Menues/font/source/font_kip.ttf" id="1_rva54"]
+[ext_resource type="Texture2D" uid="uid://c87a00k3syarq" path="res://spr/menu/naming_bck.png" id="1_vrgay"]
+[ext_resource type="SpriteFrames" uid="uid://sdgu6j6cba15" path="res://spr/menu/ani_new_cursor.tres" id="3_63gvr"]
+[ext_resource type="Texture2D" uid="uid://cl30huxtqohk1" path="res://spr/port/char/port.png" id="4_0mnkn"]
+[ext_resource type="Script" path="res://Characters/maker/naming/obj_name_cursor.gd" id="5_yk7nr"]
+
+[node name="set_keyboard" type="Node2D"]
+texture_filter = 1
+script = ExtResource("5_yk7nr")
+
+[node name="obj_bck" type="Sprite2D" parent="."]
+texture = ExtResource("1_vrgay")
+centered = false
+
+[node name="obj_text" type="Label" parent="."]
+visible = false
+texture_filter = 1
+offset_left = 24.0
+offset_top = 104.0
+offset_right = 310.0
+offset_bottom = 218.0
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("1_rva54")
+text = "A B C D E F G H I J K L
+M N O P Q R S T U V W X
+Y Z 0 1 2 3 4 5 6 7 8 0
+a b c d e f g h i j k l
+m n o p q r s t u v w x
+y z . ! ? \" * - @ ( ) ♥"
+
+[node name="obj_prompt" type="Label" parent="."]
+texture_filter = 1
+offset_left = 80.0
+offset_top = 32.0
+offset_right = 240.0
+offset_bottom = 55.0
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("1_rva54")
+text = "Enter a name!"
+
+[node name="obj_port" type="Sprite2D" parent="."]
+position = Vector2(216, 40)
+texture = ExtResource("4_0mnkn")
+region_enabled = true
+region_rect = Rect2(8, 0, 56, 68)
+
+[node name="obj_name_cursor" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(56, 104)
+sprite_frames = ExtResource("3_63gvr")
+centered = false
+
+[node name="obj_confirm" type="Label" parent="."]
+texture_filter = 1
+offset_left = 72.0
+offset_top = 200.0
+offset_right = 288.0
+offset_bottom = 223.0
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("1_rva54")
+text = "Press x to confirm."
+
+[node name="obj_name" type="Label" parent="."]
+texture_filter = 1
+offset_left = 80.0
+offset_top = 56.0
+offset_right = 240.0
+offset_bottom = 79.0
+scale = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("1_rva54")
+text = "(Name here)"

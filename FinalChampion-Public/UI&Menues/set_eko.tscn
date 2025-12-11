@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnbgfnipdc1b4"]
+
+[ext_resource type="Script" path="res://UI&Menues/set_eko.gd" id="1_524rq"]
+[ext_resource type="Texture2D" uid="uid://c36cxrr6f6owr" path="res://spr/menu/bar_eko.png" id="1_ysa4h"]
+
+[node name="set_eko" type="Node2D"]
+z_index = 13
+texture_filter = 1
+script = ExtResource("1_524rq")
+
+[node name="obj_box" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_ysa4h")
+centered = false

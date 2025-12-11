@@ -1,0 +1,25 @@
+[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://bxsra0devmeyv"]
+
+[ext_resource type="Texture2D" uid="uid://c561b3ir5beub" path="res://spr/btl/multi/kempf.png" id="1_siraa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r8civ"]
+atlas = ExtResource("1_siraa")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eiebm"]
+atlas = ExtResource("1_siraa")
+region = Rect2(32, 0, 32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r8civ")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eiebm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

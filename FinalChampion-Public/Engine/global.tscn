@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxhs4cyrlugpk"]
+
+[ext_resource type="Script" path="res://Engine/obj_ram.gd" id="1_4fohq"]
+[ext_resource type="Script" path="res://UI&Menues/obj_sound.gd" id="2_dmtkh"]
+[ext_resource type="Script" path="res://Engine/obj_cuts.gd" id="3_46r80"]
+
+[node name="obj_ram" type="Node"]
+script = ExtResource("1_4fohq")
+
+[node name="obj_sound" type="Node2D" parent="."]
+script = ExtResource("2_dmtkh")
+
+[node name="obj_bgm" type="AudioStreamPlayer" parent="obj_sound"]
+
+[node name="obj_ambient" type="AudioStreamPlayer" parent="obj_sound"]
+volume_db = -8.0
+
+[node name="obj_cuts" type="Node2D" parent="."]
+script = ExtResource("3_46r80")

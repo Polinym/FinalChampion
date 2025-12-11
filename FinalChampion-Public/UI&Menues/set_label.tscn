@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://2qnv038kcts8"]
+
+[ext_resource type="Script" path="res://UI&Menues/set_label.gd" id="1_qtu2k"]
+
+[node name="set_label" type="Node2D"]
+script = ExtResource("1_qtu2k")

@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://ty4txh0ydgxd"]
+
+[ext_resource type="Texture2D" uid="uid://wyte6slvhdew" path="res://spr/ow/npc/zakton_blink.png" id="1_3jne7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lsc2v"]
+atlas = ExtResource("1_3jne7")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_310hl"]
+atlas = ExtResource("1_3jne7")
+region = Rect2(0, 32, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vqgkj"]
+atlas = ExtResource("1_3jne7")
+region = Rect2(0, 64, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6cp82"]
+atlas = ExtResource("1_3jne7")
+region = Rect2(0, 96, 16, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lsc2v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_310hl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vqgkj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6cp82")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

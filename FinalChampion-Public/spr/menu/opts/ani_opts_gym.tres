@@ -1,0 +1,25 @@
+[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://d0bxgb2pfkxra"]
+
+[ext_resource type="Texture2D" uid="uid://ddbqgjixbse01" path="res://spr/menu/opts/bar_opts_gym.png" id="1_jpuld"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n767u"]
+atlas = ExtResource("1_jpuld")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ff7nd"]
+atlas = ExtResource("1_jpuld")
+region = Rect2(32, 0, 32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n767u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ff7nd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

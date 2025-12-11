@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cm8enwbq6ogio"]
+
+[ext_resource type="Script" path="res://Battle/set_nmb.gd" id="1_54vt8"]
+
+[node name="set_nmb" type="Node2D"]
+z_index = 2
+position = Vector2(8, 24)
+script = ExtResource("1_54vt8")

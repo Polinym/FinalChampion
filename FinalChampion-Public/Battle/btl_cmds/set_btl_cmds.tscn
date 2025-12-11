@@ -1,0 +1,73 @@
+[gd_scene load_steps=9 format=3 uid="uid://n7yrbmcnqa60"]
+
+[ext_resource type="Texture2D" uid="uid://dhfj0hfior51t" path="res://spr/menu/box/btl_cmds.png" id="1_cwbs8"]
+[ext_resource type="Texture2D" uid="uid://b6uw2u7ody1yw" path="res://spr/menu/cursor_s_r.png" id="2_5dm74"]
+[ext_resource type="Texture2D" uid="uid://dxn63h5imebfr" path="res://spr/menu/cursor.png" id="4_4pkca"]
+[ext_resource type="Script" path="res://Battle/btl_cmds/obj_btl_cmds_cursor.gd" id="4_p1hqu"]
+[ext_resource type="Texture2D" uid="uid://wi0x4bdt5r2h" path="res://spr/menu/qstats.png" id="5_hqd1q"]
+[ext_resource type="SpriteFrames" uid="uid://dhe3831kkopsm" path="res://spr/menu/ani_reaction.tres" id="6_15xcp"]
+[ext_resource type="Texture2D" uid="uid://cwqw1y0qc0vcv" path="res://spr/icon/icon_owen.png" id="7_l6v4x"]
+[ext_resource type="SpriteFrames" uid="uid://cwffr7bvq204" path="res://spr/btl/ani_lbl_p1.tres" id="8_c5jdf"]
+
+[node name="set_btl_cmds" type="Node2D"]
+z_index = 2
+
+[node name="obj_btl_cmds_box" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, 32)
+texture = ExtResource("1_cwbs8")
+centered = false
+
+[node name="obj_btl_cmds_cursor_r" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(112, 80)
+texture = ExtResource("2_5dm74")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 8, 8)
+
+[node name="obj_btl_cmds_cursor_l" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(16, 80)
+scale = Vector2(-1, 1)
+texture = ExtResource("2_5dm74")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 8, 8)
+
+[node name="obj_btl_cmds_text" type="Sprite2D" parent="."]
+texture_filter = 1
+centered = false
+
+[node name="obj_btl_cmds_cursor" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(8, 48)
+scale = Vector2(1, 0.982143)
+texture = ExtResource("4_4pkca")
+centered = false
+script = ExtResource("4_p1hqu")
+
+[node name="obj_qstats" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(8, 16)
+texture = ExtResource("5_hqd1q")
+centered = false
+
+[node name="obj_reaction" type="AnimatedSprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(24, -56)
+sprite_frames = ExtResource("6_15xcp")
+centered = false
+
+[node name="obj_icon" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(96, 16)
+texture = ExtResource("7_l6v4x")
+
+[node name="obj_lbl_p" type="AnimatedSprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(40, 24)
+sprite_frames = ExtResource("8_c5jdf")

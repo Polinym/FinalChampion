@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://cnom76kb6ms65"]
+
+[ext_resource type="Script" path="res://Campaign/items/set_items.gd" id="1_f2v8g"]
+[ext_resource type="Texture2D" uid="uid://d0688yg4bqia7" path="res://spr/menu/box_items.png" id="1_tjyib"]
+[ext_resource type="Texture2D" uid="uid://do0v8x4vj6u47" path="res://spr/menu/items/item_phone.png" id="2_xgjau"]
+[ext_resource type="SpriteFrames" uid="uid://sdgu6j6cba15" path="res://spr/menu/ani_new_cursor.tres" id="4_w4sgi"]
+
+[node name="set_items" type="Node2D"]
+z_index = 20
+texture_filter = 1
+script = ExtResource("1_f2v8g")
+
+[node name="obj_box" type="Sprite2D" parent="."]
+texture = ExtResource("1_tjyib")
+centered = false
+
+[node name="obj_sprite" type="Sprite2D" parent="."]
+position = Vector2(164, 8)
+texture = ExtResource("2_xgjau")
+centered = false
+
+[node name="obj_cursor" type="AnimatedSprite2D" parent="."]
+position = Vector2(8, 80)
+sprite_frames = ExtResource("4_w4sgi")
+centered = false
+offset = Vector2(0, 4)

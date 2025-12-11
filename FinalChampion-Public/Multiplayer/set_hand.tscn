@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://dooeccex7hyri"]
+
+[ext_resource type="Script" path="res://Multiplayer/set_hand.gd" id="1_8n1n4"]
+[ext_resource type="SpriteFrames" uid="uid://cbi1xeoo06ncv" path="res://spr/btl/multi/ani_hand_p1.tres" id="1_bfuoy"]
+[ext_resource type="SpriteFrames" uid="uid://bur4q1t2ococ0" path="res://spr/btl/multi/ani_hand_shadow.tres" id="3_7tk8v"]
+[ext_resource type="Texture2D" uid="uid://dn1lo2v7vwflf" path="res://spr/btl/multi/token_p1.png" id="4_607b6"]
+
+[node name="set_hand" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_8n1n4")
+
+[node name="obj_sprite" type="AnimatedSprite2D" parent="."]
+z_index = 1
+sprite_frames = ExtResource("1_bfuoy")
+centered = false
+
+[node name="obj_shadow" type="AnimatedSprite2D" parent="."]
+position = Vector2(-3, 3)
+sprite_frames = ExtResource("3_7tk8v")
+centered = false
+
+[node name="obj_token" type="Sprite2D" parent="."]
+position = Vector2(-4, -4)
+texture = ExtResource("4_607b6")
+centered = false
